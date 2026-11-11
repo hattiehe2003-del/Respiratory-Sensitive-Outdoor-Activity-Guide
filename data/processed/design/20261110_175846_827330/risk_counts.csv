@@ -1,0 +1,55 @@
+﻿split,station_id,Low,Moderate,High,Very High,Serious,Unknown
+test,Causeway Bay,7231,5699,101,51,4,18
+test,Central,6905,6010,99,54,1,35
+test,Central/Western,7474,5446,94,70,3,17
+test,Eastern,7061,5851,118,55,2,17
+test,Kwai Chung,8046,4890,99,50,2,17
+test,Kwun Tong,7604,5348,83,49,3,17
+test,Mong Kok,6892,6001,107,85,2,17
+test,North,7967,4908,131,74,4,20
+test,Sha Tin,8021,4916,100,45,2,20
+test,Sham Shui Po,7701,5248,85,52,1,17
+test,Southern,7850,5069,126,42,0,17
+test,Tai Po,8020,4851,143,66,4,20
+test,Tap Mun,8168,4459,128,42,0,307
+test,Tseung Kwan O,7513,5405,97,68,4,17
+test,Tsuen Wan,9208,3781,59,39,0,17
+test,Tuen Mun,7387,5312,195,177,15,18
+test,Tung Chung,10003,2923,93,61,7,17
+test,Yuen Long,9018,3865,108,95,1,17
+train,Causeway Bay,15939,14337,278,195,6,493
+train,Central,16979,13324,256,191,6,492
+train,Central/Western,17622,12611,279,214,31,491
+train,Eastern,16634,13751,220,142,10,491
+train,Kwai Chung,18939,11439,214,153,12,491
+train,Kwun Tong,17730,12670,191,152,14,491
+train,Mong Kok,16530,13716,314,187,7,494
+train,North,18046,11101,328,320,20,1433
+train,Sha Tin,19860,10527,225,143,1,492
+train,Sham Shui Po,17577,12724,256,185,15,491
+train,Southern,17222,12228,200,149,17,1432
+train,Tai Po,18928,11249,325,247,7,492
+train,Tap Mun,16925,11372,574,554,37,1786
+train,Tseung Kwan O,18491,11986,155,116,9,491
+train,Tsuen Wan,20321,10066,195,163,12,491
+train,Tuen Mun,18118,11629,475,493,41,492
+train,Tung Chung,22483,7662,275,314,22,492
+train,Yuen Long,19909,10017,434,362,34,492
+validation,Causeway Bay,4780,3889,82,32,0,1
+validation,Central,5121,3588,52,22,0,1
+validation,Central/Western,5219,3464,67,32,1,1
+validation,Eastern,5035,3689,46,13,0,1
+validation,Kwai Chung,5574,3116,62,31,0,1
+validation,Kwun Tong,5439,3270,55,19,0,1
+validation,Mong Kok,5271,3422,58,32,0,1
+validation,North,5733,2958,65,27,0,1
+validation,Sha Tin,5676,3028,57,22,0,1
+validation,Sham Shui Po,5367,3340,44,32,0,1
+validation,Southern,5376,3308,76,23,0,1
+validation,Tai Po,5713,2972,71,27,0,1
+validation,Tap Mun,5663,2898,88,20,0,115
+validation,Tseung Kwan O,5228,3455,83,17,0,1
+validation,Tsuen Wan,5850,2840,67,26,0,1
+validation,Tuen Mun,5334,3218,128,95,8,1
+validation,Tung Chung,5582,2969,130,99,3,1
+validation,Yuen Long,5896,2731,93,61,2,1

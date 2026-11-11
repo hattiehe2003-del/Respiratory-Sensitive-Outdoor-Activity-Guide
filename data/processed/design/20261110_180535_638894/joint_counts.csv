@@ -1,0 +1,13 @@
+﻿policy,inputs,targets,split,joint_windows
+exact_only,all18,same17,train,18783
+exact_only,all18,same17,validation,5870
+exact_only,all18,same17,test,8054
+exact_only,without_tap_mun17,same17,train,27593
+exact_only,without_tap_mun17,same17,validation,8304
+exact_only,without_tap_mun17,same17,test,12132
+category_observed,all18,same17,train,20078
+category_observed,all18,same17,validation,6161
+category_observed,all18,same17,test,8308
+category_observed,without_tap_mun17,same17,train,28957
+category_observed,without_tap_mun17,same17,validation,8760
+category_observed,without_tap_mun17,same17,test,12450

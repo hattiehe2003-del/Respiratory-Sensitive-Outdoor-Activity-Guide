@@ -1,0 +1,307 @@
+﻿policy,inputs,target,split,windows
+exact_only,all18,Causeway Bay,train,19012
+exact_only,all18,Causeway Bay,validation,5930
+exact_only,all18,Causeway Bay,test,8151
+exact_only,all18,Central,train,19012
+exact_only,all18,Central,validation,5930
+exact_only,all18,Central,test,8128
+exact_only,all18,Central/Western,train,18963
+exact_only,all18,Central/Western,validation,5930
+exact_only,all18,Central/Western,test,8152
+exact_only,all18,Eastern,train,18993
+exact_only,all18,Eastern,validation,5930
+exact_only,all18,Eastern,test,8152
+exact_only,all18,Kwai Chung,train,19055
+exact_only,all18,Kwai Chung,validation,5930
+exact_only,all18,Kwai Chung,test,8152
+exact_only,all18,Kwun Tong,train,18993
+exact_only,all18,Kwun Tong,validation,5930
+exact_only,all18,Kwun Tong,test,8152
+exact_only,all18,Mong Kok,train,19010
+exact_only,all18,Mong Kok,validation,5930
+exact_only,all18,Mong Kok,test,8152
+exact_only,all18,North,train,18951
+exact_only,all18,North,validation,5930
+exact_only,all18,North,test,8127
+exact_only,all18,Sha Tin,train,19055
+exact_only,all18,Sha Tin,validation,5930
+exact_only,all18,Sha Tin,test,8128
+exact_only,all18,Sham Shui Po,train,19032
+exact_only,all18,Sham Shui Po,validation,5930
+exact_only,all18,Sham Shui Po,test,8152
+exact_only,all18,Southern,train,18961
+exact_only,all18,Southern,validation,5930
+exact_only,all18,Southern,test,8174
+exact_only,all18,Tai Po,train,19020
+exact_only,all18,Tai Po,validation,5930
+exact_only,all18,Tai Po,test,8127
+exact_only,all18,Tseung Kwan O,train,18993
+exact_only,all18,Tseung Kwan O,validation,5930
+exact_only,all18,Tseung Kwan O,test,8152
+exact_only,all18,Tsuen Wan,train,19055
+exact_only,all18,Tsuen Wan,validation,5930
+exact_only,all18,Tsuen Wan,test,8174
+exact_only,all18,Tuen Mun,train,18891
+exact_only,all18,Tuen Mun,validation,5870
+exact_only,all18,Tuen Mun,test,8102
+exact_only,all18,Tung Chung,train,19007
+exact_only,all18,Tung Chung,validation,5895
+exact_only,all18,Tung Chung,test,8128
+exact_only,all18,Yuen Long,train,18949
+exact_only,all18,Yuen Long,validation,5907
+exact_only,all18,Yuen Long,test,8153
+exact_only,without_tap_mun17,Causeway Bay,train,27865
+exact_only,without_tap_mun17,Causeway Bay,validation,8400
+exact_only,without_tap_mun17,Causeway Bay,test,12229
+exact_only,without_tap_mun17,Central,train,27887
+exact_only,without_tap_mun17,Central,validation,8400
+exact_only,without_tap_mun17,Central,test,12230
+exact_only,without_tap_mun17,Central/Western,train,27816
+exact_only,without_tap_mun17,Central/Western,validation,8376
+exact_only,without_tap_mun17,Central/Western,test,12254
+exact_only,without_tap_mun17,Eastern,train,27870
+exact_only,without_tap_mun17,Eastern,validation,8400
+exact_only,without_tap_mun17,Eastern,test,12254
+exact_only,without_tap_mun17,Kwai Chung,train,27910
+exact_only,without_tap_mun17,Kwai Chung,validation,8400
+exact_only,without_tap_mun17,Kwai Chung,test,12254
+exact_only,without_tap_mun17,Kwun Tong,train,27869
+exact_only,without_tap_mun17,Kwun Tong,validation,8400
+exact_only,without_tap_mun17,Kwun Tong,test,12254
+exact_only,without_tap_mun17,Mong Kok,train,27863
+exact_only,without_tap_mun17,Mong Kok,validation,8400
+exact_only,without_tap_mun17,Mong Kok,test,12254
+exact_only,without_tap_mun17,North,train,27815
+exact_only,without_tap_mun17,North,validation,8400
+exact_only,without_tap_mun17,North,test,12229
+exact_only,without_tap_mun17,Sha Tin,train,27931
+exact_only,without_tap_mun17,Sha Tin,validation,8400
+exact_only,without_tap_mun17,Sha Tin,test,12230
+exact_only,without_tap_mun17,Sham Shui Po,train,27887
+exact_only,without_tap_mun17,Sham Shui Po,validation,8400
+exact_only,without_tap_mun17,Sham Shui Po,test,12254
+exact_only,without_tap_mun17,Southern,train,27837
+exact_only,without_tap_mun17,Southern,validation,8400
+exact_only,without_tap_mun17,Southern,test,12276
+exact_only,without_tap_mun17,Tai Po,train,27907
+exact_only,without_tap_mun17,Tai Po,validation,8400
+exact_only,without_tap_mun17,Tai Po,test,12229
+exact_only,without_tap_mun17,Tseung Kwan O,train,27891
+exact_only,without_tap_mun17,Tseung Kwan O,validation,8400
+exact_only,without_tap_mun17,Tseung Kwan O,test,12254
+exact_only,without_tap_mun17,Tsuen Wan,train,27909
+exact_only,without_tap_mun17,Tsuen Wan,validation,8400
+exact_only,without_tap_mun17,Tsuen Wan,test,12276
+exact_only,without_tap_mun17,Tuen Mun,train,27738
+exact_only,without_tap_mun17,Tuen Mun,validation,8329
+exact_only,without_tap_mun17,Tuen Mun,test,12204
+exact_only,without_tap_mun17,Tung Chung,train,27858
+exact_only,without_tap_mun17,Tung Chung,validation,8353
+exact_only,without_tap_mun17,Tung Chung,test,12230
+exact_only,without_tap_mun17,Yuen Long,train,27786
+exact_only,without_tap_mun17,Yuen Long,validation,8377
+exact_only,without_tap_mun17,Yuen Long,test,12255
+exact_only,single,Causeway Bay,train,29514
+exact_only,single,Causeway Bay,validation,8760
+exact_only,single,Causeway Bay,test,12562
+exact_only,single,Central,train,29610
+exact_only,single,Central,validation,8760
+exact_only,single,Central,test,12548
+exact_only,single,Central/Western,train,29217
+exact_only,single,Central/Western,validation,8664
+exact_only,single,Central/Western,test,12659
+exact_only,single,Eastern,train,29512
+exact_only,single,Eastern,validation,8760
+exact_only,single,Eastern,test,12660
+exact_only,single,Kwai Chung,train,29538
+exact_only,single,Kwai Chung,validation,8760
+exact_only,single,Kwai Chung,test,12660
+exact_only,single,Kwun Tong,train,29486
+exact_only,single,Kwun Tong,validation,8760
+exact_only,single,Kwun Tong,test,12659
+exact_only,single,Mong Kok,train,29512
+exact_only,single,Mong Kok,validation,8760
+exact_only,single,Mong Kok,test,12660
+exact_only,single,North,train,28529
+exact_only,single,North,validation,8719
+exact_only,single,North,test,12560
+exact_only,single,Sha Tin,train,29805
+exact_only,single,Sha Tin,validation,8760
+exact_only,single,Sha Tin,test,12562
+exact_only,single,Sham Shui Po,train,29513
+exact_only,single,Sham Shui Po,validation,8760
+exact_only,single,Sham Shui Po,test,12661
+exact_only,single,Southern,train,28569
+exact_only,single,Southern,validation,8760
+exact_only,single,Southern,test,12757
+exact_only,single,Tai Po,train,29674
+exact_only,single,Tai Po,validation,8718
+exact_only,single,Tai Po,test,12560
+exact_only,single,Tseung Kwan O,train,29608
+exact_only,single,Tseung Kwan O,validation,8760
+exact_only,single,Tseung Kwan O,test,12658
+exact_only,single,Tsuen Wan,train,29539
+exact_only,single,Tsuen Wan,validation,8760
+exact_only,single,Tsuen Wan,test,12757
+exact_only,single,Tuen Mun,train,28816
+exact_only,single,Tuen Mun,validation,8401
+exact_only,single,Tuen Mun,test,12439
+exact_only,single,Tung Chung,train,29146
+exact_only,single,Tung Chung,validation,8567
+exact_only,single,Tung Chung,test,12541
+exact_only,single,Yuen Long,train,29008
+exact_only,single,Yuen Long,validation,8623
+exact_only,single,Yuen Long,test,12661
+category_observed,all18,Causeway Bay,train,20102
+category_observed,all18,Causeway Bay,validation,6161
+category_observed,all18,Causeway Bay,test,8356
+category_observed,all18,Central,train,20102
+category_observed,all18,Central,validation,6161
+category_observed,all18,Central,test,8332
+category_observed,all18,Central/Western,train,20102
+category_observed,all18,Central/Western,validation,6161
+category_observed,all18,Central/Western,test,8356
+category_observed,all18,Eastern,train,20102
+category_observed,all18,Eastern,validation,6161
+category_observed,all18,Eastern,test,8356
+category_observed,all18,Kwai Chung,train,20102
+category_observed,all18,Kwai Chung,validation,6161
+category_observed,all18,Kwai Chung,test,8356
+category_observed,all18,Kwun Tong,train,20102
+category_observed,all18,Kwun Tong,validation,6161
+category_observed,all18,Kwun Tong,test,8356
+category_observed,all18,Mong Kok,train,20078
+category_observed,all18,Mong Kok,validation,6161
+category_observed,all18,Mong Kok,test,8356
+category_observed,all18,North,train,20102
+category_observed,all18,North,validation,6161
+category_observed,all18,North,test,8332
+category_observed,all18,Sha Tin,train,20102
+category_observed,all18,Sha Tin,validation,6161
+category_observed,all18,Sha Tin,test,8332
+category_observed,all18,Sham Shui Po,train,20102
+category_observed,all18,Sham Shui Po,validation,6161
+category_observed,all18,Sham Shui Po,test,8356
+category_observed,all18,Southern,train,20102
+category_observed,all18,Southern,validation,6161
+category_observed,all18,Southern,test,8356
+category_observed,all18,Tai Po,train,20102
+category_observed,all18,Tai Po,validation,6161
+category_observed,all18,Tai Po,test,8332
+category_observed,all18,Tseung Kwan O,train,20102
+category_observed,all18,Tseung Kwan O,validation,6161
+category_observed,all18,Tseung Kwan O,test,8356
+category_observed,all18,Tsuen Wan,train,20102
+category_observed,all18,Tsuen Wan,validation,6161
+category_observed,all18,Tsuen Wan,test,8356
+category_observed,all18,Tuen Mun,train,20102
+category_observed,all18,Tuen Mun,validation,6161
+category_observed,all18,Tuen Mun,test,8356
+category_observed,all18,Tung Chung,train,20102
+category_observed,all18,Tung Chung,validation,6161
+category_observed,all18,Tung Chung,test,8356
+category_observed,all18,Yuen Long,train,20102
+category_observed,all18,Yuen Long,validation,6161
+category_observed,all18,Yuen Long,test,8356
+category_observed,without_tap_mun17,Causeway Bay,train,28981
+category_observed,without_tap_mun17,Causeway Bay,validation,8760
+category_observed,without_tap_mun17,Causeway Bay,test,12498
+category_observed,without_tap_mun17,Central,train,29005
+category_observed,without_tap_mun17,Central,validation,8760
+category_observed,without_tap_mun17,Central,test,12498
+category_observed,without_tap_mun17,Central/Western,train,29006
+category_observed,without_tap_mun17,Central/Western,validation,8760
+category_observed,without_tap_mun17,Central/Western,test,12522
+category_observed,without_tap_mun17,Eastern,train,29006
+category_observed,without_tap_mun17,Eastern,validation,8760
+category_observed,without_tap_mun17,Eastern,test,12522
+category_observed,without_tap_mun17,Kwai Chung,train,29006
+category_observed,without_tap_mun17,Kwai Chung,validation,8760
+category_observed,without_tap_mun17,Kwai Chung,test,12522
+category_observed,without_tap_mun17,Kwun Tong,train,29006
+category_observed,without_tap_mun17,Kwun Tong,validation,8760
+category_observed,without_tap_mun17,Kwun Tong,test,12522
+category_observed,without_tap_mun17,Mong Kok,train,28981
+category_observed,without_tap_mun17,Mong Kok,validation,8760
+category_observed,without_tap_mun17,Mong Kok,test,12522
+category_observed,without_tap_mun17,North,train,29005
+category_observed,without_tap_mun17,North,validation,8760
+category_observed,without_tap_mun17,North,test,12498
+category_observed,without_tap_mun17,Sha Tin,train,29005
+category_observed,without_tap_mun17,Sha Tin,validation,8760
+category_observed,without_tap_mun17,Sha Tin,test,12498
+category_observed,without_tap_mun17,Sham Shui Po,train,29006
+category_observed,without_tap_mun17,Sham Shui Po,validation,8760
+category_observed,without_tap_mun17,Sham Shui Po,test,12522
+category_observed,without_tap_mun17,Southern,train,29006
+category_observed,without_tap_mun17,Southern,validation,8760
+category_observed,without_tap_mun17,Southern,test,12522
+category_observed,without_tap_mun17,Tai Po,train,29005
+category_observed,without_tap_mun17,Tai Po,validation,8760
+category_observed,without_tap_mun17,Tai Po,test,12498
+category_observed,without_tap_mun17,Tseung Kwan O,train,29006
+category_observed,without_tap_mun17,Tseung Kwan O,validation,8760
+category_observed,without_tap_mun17,Tseung Kwan O,test,12522
+category_observed,without_tap_mun17,Tsuen Wan,train,29006
+category_observed,without_tap_mun17,Tsuen Wan,validation,8760
+category_observed,without_tap_mun17,Tsuen Wan,test,12522
+category_observed,without_tap_mun17,Tuen Mun,train,29005
+category_observed,without_tap_mun17,Tuen Mun,validation,8760
+category_observed,without_tap_mun17,Tuen Mun,test,12522
+category_observed,without_tap_mun17,Tung Chung,train,29005
+category_observed,without_tap_mun17,Tung Chung,validation,8760
+category_observed,without_tap_mun17,Tung Chung,test,12522
+category_observed,without_tap_mun17,Yuen Long,train,29005
+category_observed,without_tap_mun17,Yuen Long,validation,8760
+category_observed,without_tap_mun17,Yuen Long,test,12522
+category_observed,single,Causeway Bay,train,29805
+category_observed,single,Causeway Bay,validation,8760
+category_observed,single,Causeway Bay,test,12661
+category_observed,single,Central,train,29901
+category_observed,single,Central,validation,8760
+category_observed,single,Central,test,12644
+category_observed,single,Central/Western,train,29902
+category_observed,single,Central/Western,validation,8760
+category_observed,single,Central/Western,test,12757
+category_observed,single,Eastern,train,29902
+category_observed,single,Eastern,validation,8760
+category_observed,single,Eastern,test,12757
+category_observed,single,Kwai Chung,train,29902
+category_observed,single,Kwai Chung,validation,8760
+category_observed,single,Kwai Chung,test,12757
+category_observed,single,Kwun Tong,train,29902
+category_observed,single,Kwun Tong,validation,8760
+category_observed,single,Kwun Tong,test,12757
+category_observed,single,Mong Kok,train,29804
+category_observed,single,Mong Kok,validation,8760
+category_observed,single,Mong Kok,test,12757
+category_observed,single,North,train,29150
+category_observed,single,North,validation,8760
+category_observed,single,North,test,12659
+category_observed,single,Sha Tin,train,29901
+category_observed,single,Sha Tin,validation,8760
+category_observed,single,Sha Tin,test,12659
+category_observed,single,Sham Shui Po,train,29902
+category_observed,single,Sham Shui Po,validation,8760
+category_observed,single,Sham Shui Po,test,12757
+category_observed,single,Southern,train,29151
+category_observed,single,Southern,validation,8760
+category_observed,single,Southern,test,12757
+category_observed,single,Tai Po,train,29901
+category_observed,single,Tai Po,validation,8760
+category_observed,single,Tai Po,test,12659
+category_observed,single,Tseung Kwan O,train,29902
+category_observed,single,Tseung Kwan O,validation,8760
+category_observed,single,Tseung Kwan O,test,12757
+category_observed,single,Tsuen Wan,train,29902
+category_observed,single,Tsuen Wan,validation,8760
+category_observed,single,Tsuen Wan,test,12757
+category_observed,single,Tuen Mun,train,29901
+category_observed,single,Tuen Mun,validation,8760
+category_observed,single,Tuen Mun,test,12757
+category_observed,single,Tung Chung,train,29901
+category_observed,single,Tung Chung,validation,8760
+category_observed,single,Tung Chung,test,12757
+category_observed,single,Yuen Long,train,29901
+category_observed,single,Yuen Long,validation,8760
+category_observed,single,Yuen Long,test,12757

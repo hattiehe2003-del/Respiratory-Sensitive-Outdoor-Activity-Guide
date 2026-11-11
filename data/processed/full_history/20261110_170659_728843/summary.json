@@ -1,0 +1,24 @@
+{
+  "files": 151,
+  "rows": 1838616,
+  "stations": 18,
+  "source_month_start": "201312",
+  "source_month_end": "202606",
+  "timestamp_start": "2013-12-30 01:00:00+08:00",
+  "timestamp_end": "2026-07-01 00:00:00+08:00",
+  "missing_months": [],
+  "excluded_daily_summary_rows": 4559,
+  "duplicate_extra_rows": 0,
+  "missing_hours_within_station_spans": 3024,
+  "unmatched_stations": [],
+  "quality_flags": {
+    "is_missing": 16424,
+    "is_unavailable": 1413,
+    "is_substituted": 63177,
+    "is_10_plus": 1772,
+    "is_invalid": 0
+  },
+  "timestamp_convention": "source_date + source_hour hours; 24 = next-day 00:00; verify source semantics",
+  "imputation": "none",
+  "model_ready": false
+}

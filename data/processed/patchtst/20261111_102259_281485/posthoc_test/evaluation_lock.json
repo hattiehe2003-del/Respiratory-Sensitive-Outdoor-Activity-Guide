@@ -1,0 +1,32 @@
+{
+  "model_directory": "C:\\Users\\hxq08259\\Desktop\\sem1\\Math7005\\data\\processed\\patchtst\\20261111_102259_281485",
+  "model_sha256": "f616d76d2219a9786a365bbf89aaa25a5a6cba0e3ed7a0ffc081a478fde828e8",
+  "scaler_sha256": "3ebdf7e44d0c41a45dc35bb5ac5d36d37da8146c1c36a035002d5915b1790810",
+  "test_start_exclusive": "2025-01-01 00:00:00+08:00",
+  "test_end_inclusive": "2026-07-01 00:00:00+08:00",
+  "retraining": false,
+  "clipping": false,
+  "selection": "fixed before evaluating test",
+  "lookback": 72,
+  "horizon": 24,
+  "stations": [
+    "Causeway Bay",
+    "Central",
+    "Central/Western",
+    "Eastern",
+    "Kwai Chung",
+    "Kwun Tong",
+    "Mong Kok",
+    "North",
+    "Sha Tin",
+    "Sham Shui Po",
+    "Southern",
+    "Tai Po",
+    "Tseung Kwan O",
+    "Tsuen Wan",
+    "Tuen Mun",
+    "Tung Chung",
+    "Yuen Long"
+  ],
+  "target": "capped AQHI; 10+ encoded as 10"
+}

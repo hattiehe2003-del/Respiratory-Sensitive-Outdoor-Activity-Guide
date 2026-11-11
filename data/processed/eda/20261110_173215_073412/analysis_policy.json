@@ -1,0 +1,21 @@
+{
+  "input_directory": "C:\\Users\\hxq08259\\Desktop\\sem1\\Math7005\\data\\processed\\full_history\\20261110_170756_651230",
+  "analysis_start_source_date": "2020-06-01",
+  "analysis_rows": 956448,
+  "stations": 18,
+  "gap_start_inclusive": "2023-08-25 01:00:00+08:00",
+  "gap_end_inclusive": "2023-09-01 00:00:00+08:00",
+  "gap_policy": "No imputation; exclude windows whose input or target spans missing timestamps",
+  "lookback_candidate": 72,
+  "horizon_candidate": 24,
+  "exact_numeric_means_exclude_10_plus": true,
+  "substituted_values_retained": true,
+  "training_split": "not yet defined",
+  "model_trained": false,
+  "open_decisions": [
+    "10+ treatment",
+    "substituted values policy",
+    "other missing values policy",
+    "chronological split and scaling on training data only"
+  ]
+}

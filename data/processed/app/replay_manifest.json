@@ -1,0 +1,30 @@
+{
+  "purpose": "Historical replay for the Streamlit demonstration; not a live feed",
+  "source": "C:\\Users\\hxq08259\\Desktop\\sem1\\Math7005\\data\\processed\\full_history\\20261110_170756_651230\\history_all_audited.csv.gz",
+  "source_is_modified": false,
+  "output": "C:\\Users\\hxq08259\\Desktop\\sem1\\Math7005\\data\\processed\\app\\replay_history_2025_2026.csv.gz",
+  "stations": [
+    "Causeway Bay",
+    "Central",
+    "Central/Western",
+    "Eastern",
+    "Kwai Chung",
+    "Kwun Tong",
+    "Mong Kok",
+    "North",
+    "Sha Tin",
+    "Sham Shui Po",
+    "Southern",
+    "Tai Po",
+    "Tseung Kwan O",
+    "Tsuen Wan",
+    "Tuen Mun",
+    "Tung Chung",
+    "Yuen Long"
+  ],
+  "rows": 223992,
+  "start": "2024-12-29 01:00:00+08:00",
+  "end": "2026-07-01 00:00:00+08:00",
+  "target": "capped AQHI; original 10+ encoded as 10 with marker retained",
+  "created_by": "src/data_loader.py::build_app_data"
+}

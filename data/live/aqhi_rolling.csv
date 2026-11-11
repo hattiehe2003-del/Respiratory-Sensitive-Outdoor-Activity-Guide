@@ -1,0 +1,433 @@
+timestamp,station_id,station_type,aqhi_raw,capped_aqhi,is_substituted,is_10_plus,is_missing,is_unavailable,is_invalid
+2026-11-10 18:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Central,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Kwai Chung,General Stations,5,5.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Tai Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Tap Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Tuen Mun,General Stations,5,5.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Tung Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 18:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Central,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Tai Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Tap Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Tuen Mun,General Stations,5,5.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Tung Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 19:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Tai Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Tap Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 20:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Tai Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 21:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 22:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-10 23:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 00:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 01:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Tap Mun,General Stations,-,,False,False,False,True,False
+2026-11-11 02:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 02:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Tap Mun,General Stations,-,,False,False,False,True,False
+2026-11-11 03:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 03:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 04:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Sha Tin,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 05:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 06:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 07:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Causeway Bay,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Central,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Eastern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Kwun Tong,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 08:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Central/Western,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Kwai Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Mong Kok,Roadside Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Southern,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Tuen Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 09:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Tsuen Wan,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Tung Chung,General Stations,2,2.0,False,False,False,False,False
+2026-11-11 10:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,North,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Sha Tin,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Sham Shui Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Tai Po,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Tseung Kwan O,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 11:00:00+08:00,Yuen Long,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Tai Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Tuen Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 12:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Eastern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,North,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Tai Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Tap Mun,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Tuen Mun,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 13:00:00+08:00,Yuen Long,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Central,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Central/Western,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Eastern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Kwai Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Kwun Tong,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Mong Kok,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,North,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Sha Tin,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Southern,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Tai Po,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Tap Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Tsuen Wan,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Tuen Mun,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Tung Chung,General Stations,3,3.0,False,False,False,False,False
+2026-11-11 14:00:00+08:00,Yuen Long,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Causeway Bay,Roadside Stations,4,4.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Central,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Central/Western,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Eastern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Kwai Chung,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Kwun Tong,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Mong Kok,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,North,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Sha Tin,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Sham Shui Po,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Southern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Tai Po,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Tap Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Tsuen Wan,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Tuen Mun,General Stations,6,6.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Tung Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 15:00:00+08:00,Yuen Long,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Causeway Bay,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Central,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Central/Western,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Eastern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Kwai Chung,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Kwun Tong,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Mong Kok,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,North,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Sha Tin,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Sham Shui Po,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Southern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Tai Po,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Tap Mun,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Tseung Kwan O,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Tsuen Wan,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Tuen Mun,General Stations,6,6.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Tung Chung,General Stations,4,4.0,False,False,False,False,False
+2026-11-11 16:00:00+08:00,Yuen Long,General Stations,6,6.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Causeway Bay,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Central,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Central/Western,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Eastern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Kwai Chung,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Kwun Tong,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Mong Kok,Roadside Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,North,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Sha Tin,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Sham Shui Po,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Southern,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Tai Po,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Tap Mun,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Tseung Kwan O,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Tsuen Wan,General Stations,6,6.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Tuen Mun,General Stations,6,6.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Tung Chung,General Stations,5,5.0,False,False,False,False,False
+2026-11-11 17:00:00+08:00,Yuen Long,General Stations,6,6.0,False,False,False,False,False

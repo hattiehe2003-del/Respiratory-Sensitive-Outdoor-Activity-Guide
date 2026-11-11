@@ -1,0 +1,40 @@
+{
+  "history_rows": 12960,
+  "history_stations": 18,
+  "excluded_daily_summary_rows": 30,
+  "history_start": "2026-06-01 01:00:00+08:00",
+  "history_end": "2026-07-01 00:00:00+08:00",
+  "missing_values": 54,
+  "unavailable_dash_values": 138,
+  "substituted_values": 1108,
+  "capped_values": 0,
+  "invalid_values": 0,
+  "duplicate_station_hours": 0,
+  "missing_hours_within_observed_range": {
+    "Causeway Bay": 0,
+    "Central": 0,
+    "Central/Western": 0,
+    "Eastern": 0,
+    "Kwai Chung": 0,
+    "Kwun Tong": 0,
+    "Mong Kok": 0,
+    "North": 0,
+    "Sha Tin": 0,
+    "Sham Shui Po": 0,
+    "Southern": 0,
+    "Tai Po": 0,
+    "Tap Mun": 0,
+    "Tseung Kwan O": 0,
+    "Tsuen Wan": 0,
+    "Tuen Mun": 0,
+    "Tung Chung": 0,
+    "Yuen Long": 0
+  },
+  "network_stations": 18,
+  "current_stations": 18,
+  "current_published_at": [
+    "2026-11-02 12:30:00+08:00"
+  ],
+  "history_unmatched": 0,
+  "current_unmatched": 0
+}

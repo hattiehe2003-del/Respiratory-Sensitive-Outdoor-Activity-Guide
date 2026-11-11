@@ -1,0 +1,19 @@
+﻿station_id,start_inclusive,end_inclusive,hours,reason,policy
+Causeway Bay,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Central,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Central/Western,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Eastern,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Kwai Chung,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Kwun Tong,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Mong Kok,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+North,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Sha Tin,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Sham Shui Po,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Southern,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Tai Po,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Tap Mun,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Tseung Kwan O,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Tsuen Wan,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Tuen Mun,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Tung Chung,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap
+Yuen Long,2023-08-25 01:00:00+08:00,2023-09-01 00:00:00+08:00,168,Absent from downloaded monthly files; cause unconfirmed,Keep missing; exclude any input/target window crossing this gap

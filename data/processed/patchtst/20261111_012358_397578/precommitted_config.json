@@ -1,0 +1,18 @@
+{
+  "architecture": "PatchTST-style simplified",
+  "patch_length": 12,
+  "stride": 12,
+  "layers": 2,
+  "d_model": 16,
+  "heads": 4,
+  "feedforward": 32,
+  "dropout": 0.1,
+  "seed": 42,
+  "max_epochs": 15,
+  "patience": 4,
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "appendix_after_test_seen": true,
+  "parameter_count": 7080,
+  "test_driven_tuning": false
+}

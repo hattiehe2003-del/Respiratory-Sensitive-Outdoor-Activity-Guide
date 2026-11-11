@@ -1,0 +1,33 @@
+{
+  "source": "C:\\Users\\hxq08259\\Desktop\\sem1\\Math7005\\data\\processed\\full_history\\20261110_170756_651230",
+  "lookback": 72,
+  "horizon": 24,
+  "train_end_inclusive": "2024-01-01 00:00:00+08:00",
+  "validation_end_inclusive": "2025-01-01 00:00:00+08:00",
+  "test_end_inclusive": "2026-07-01 00:00:00+08:00",
+  "boundary_rule": "all target hours within one split; past observed context allowed",
+  "gap_policy": "exclude every input/target span touching registered gap; no imputation",
+  "substituted_policy": "retain flag and observed value for this feasibility audit",
+  "comparison_targets": [
+    "Causeway Bay",
+    "Central",
+    "Central/Western",
+    "Eastern",
+    "Kwai Chung",
+    "Kwun Tong",
+    "Mong Kok",
+    "North",
+    "Sha Tin",
+    "Sham Shui Po",
+    "Southern",
+    "Tai Po",
+    "Tseung Kwan O",
+    "Tsuen Wan",
+    "Tuen Mun",
+    "Tung Chung",
+    "Yuen Long"
+  ],
+  "training_complete": false,
+  "model_choice": "not selected",
+  "test_policy": "availability counts only; do not use test distribution to tune or select models"
+}

@@ -1,0 +1,9 @@
+.venv_tsmixer/
+.ml_deps/
+.jupyter_runtime/
+.ipynb_checkpoints/
+anaconda_projects/
+**/__pycache__/
+*.py[cod]
+.streamlit/secrets.toml
+data/live_demo/
