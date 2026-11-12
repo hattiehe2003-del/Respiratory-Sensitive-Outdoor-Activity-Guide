@@ -1,6 +1,7 @@
 """MATH7005 historical-replay AQHI forecasting dashboard."""
 from __future__ import annotations
 
+import json
 from pathlib import Path
 
 import numpy as np
@@ -57,6 +58,15 @@ def cached_models():
     return ForecastBundle(ROOT)
 
 
+@st.cache_data(show_spinner=False)
+def cached_demo_output():
+    path = ROOT / "data" / "processed" / "demo" / "forecast_24h.json"
+    if not path.exists():
+        return None, None
+    payload = json.loads(path.read_text(encoding="utf-8"))
+    return pd.DataFrame(payload["records"]), payload["summary"]
+
+
 def hero(title: str, subtitle: str):
     st.markdown(
         f"""
@@ -84,6 +94,7 @@ def model_metrics() -> pd.DataFrame:
 
 history, panel, station_order, metadata = cached_data()
 bundle = cached_models()
+demo_forecast, demo_summary = cached_demo_output()
 origins = valid_origins(panel, bundle.lookback, bundle.horizon)
 if origins.empty:
     st.error("No complete historical replay window is available.")
@@ -108,6 +119,16 @@ if page == "Network overview":
     cols[1].metric("Historical coverage", "2020–2026")
     cols[2].metric("Forecast horizon", "24 hours")
     cols[3].metric("Primary test MAE", "0.538 AQHI")
+
+    if demo_summary is not None:
+        st.success(
+            "Latest generated demo output loaded: "
+            f"{demo_summary['forecast_rows']} rows, "
+            f"{demo_summary['station_count']} stations, "
+            f"origin {demo_summary['forecast_origin']}."
+        )
+        with st.expander("Preview generated 24-hour forecast output"):
+            st.dataframe(demo_forecast.head(24), hide_index=True, use_container_width=True)
 
     st.subheader("Latest recorded snapshot in the replay dataset")
     st.caption(f"Recorded at {latest_time.strftime('%d %b %Y, %H:%M HKT')} · this is archived data, not a live reading.")
@@ -291,4 +312,3 @@ else:
         "It is not an official EPD forecast, a medical device or a substitute for current public-health advice.</p>",
         unsafe_allow_html=True,
     )
-
