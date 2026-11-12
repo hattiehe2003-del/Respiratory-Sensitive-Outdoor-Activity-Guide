@@ -67,14 +67,28 @@ def cached_demo_output():
     return pd.DataFrame(payload["records"]), payload["summary"]
 
 
-def hero(title: str, subtitle: str):
+@st.cache_data(show_spinner=False)
+def cached_live_output():
+    status_path = ROOT / "data" / "live" / "prediction_status.json"
+    forecast_path = ROOT / "data" / "live" / "forecast_24h.json"
+    status = None
+    if status_path.exists():
+        status = json.loads(status_path.read_text(encoding="utf-8"))
+    if not forecast_path.exists():
+        return None, None, status
+    payload = json.loads(forecast_path.read_text(encoding="utf-8"))
+    return pd.DataFrame(payload["records"]), payload["summary"], status
+
+
+def hero(title: str, subtitle: str, live: bool = False):
+    mode = "Live 24-hour forecast" if live else "Historical replay · Not a live forecast"
     st.markdown(
         f"""
         <section class="hero">
           <div class="eyebrow">MATH7005 · Decision-support prototype</div>
           <h1>{title}</h1>
           <p>{subtitle}</p>
-          <span class="mode-chip">Historical replay · Not a live forecast</span>
+          <span class="mode-chip">{mode}</span>
         </section>
         """,
         unsafe_allow_html=True,
@@ -95,6 +109,7 @@ def model_metrics() -> pd.DataFrame:
 history, panel, station_order, metadata = cached_data()
 bundle = cached_models()
 demo_forecast, demo_summary = cached_demo_output()
+live_forecast, live_summary, live_status = cached_live_output()
 origins = valid_origins(panel, bundle.lookback, bundle.horizon)
 if origins.empty:
     st.error("No complete historical replay window is available.")
@@ -109,7 +124,8 @@ st.sidebar.caption("Scope: 17 monitoring stations · AQHI history only · Hong K
 if page == "Network overview":
     hero(
         "Air quality, with tomorrow in view.",
-        "Explore a reproducible historical replay of Hong Kong AQHI observations and the frozen TSMixer forecasting system.",
+        "View the latest official-data forecast when ready, with the audited historical replay retained for evidence.",
+        live=live_summary is not None,
     )
     latest_time = panel.dropna(how="all").index[-1]
     latest = panel.loc[latest_time].rename("AQHI").reset_index()
@@ -120,6 +136,23 @@ if page == "Network overview":
     cols[2].metric("Forecast horizon", "24 hours")
     cols[3].metric("Primary test MAE", "0.538 AQHI")
 
+    if live_summary is not None:
+        st.success(
+            "Latest live 24-hour forecast loaded: "
+            f"{live_summary['forecast_rows']} rows, "
+            f"{live_summary['station_count']} stations, "
+            f"origin {live_summary['forecast_origin']}."
+        )
+        with st.expander("Preview latest live 24-hour forecast"):
+            st.dataframe(live_forecast.head(24), hide_index=True, use_container_width=True)
+    elif live_status is not None:
+        available = int(live_status.get("available_complete_hours", 0))
+        required = int(live_status.get("required_complete_hours", 72))
+        st.info(
+            f"Live pipeline is collecting a complete input window: {available}/{required} hours ready. "
+            "It will forecast automatically once all 17 stations have 72 consecutive hours."
+        )
+
     if demo_summary is not None:
         st.success(
             "Latest generated demo output loaded: "
@@ -127,7 +160,7 @@ if page == "Network overview":
             f"{demo_summary['station_count']} stations, "
             f"origin {demo_summary['forecast_origin']}."
         )
-        with st.expander("Preview generated 24-hour forecast output"):
+        with st.expander("Preview historical 24-hour forecast demo"):
             st.dataframe(demo_forecast.head(24), hide_index=True, use_container_width=True)
 
     st.subheader("Latest recorded snapshot in the replay dataset")
