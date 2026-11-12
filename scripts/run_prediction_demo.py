@@ -8,16 +8,20 @@ from __future__ import annotations
 
 import hashlib
 import json
+import sys
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
 
+ROOT = Path(__file__).resolve().parents[1]
+if str(ROOT) not in sys.path:
+    sys.path.insert(0, str(ROOT))
+
 from src.data_loader import load_replay, replay_window, valid_origins
 from src.models import ForecastBundle
 
 
-ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "data" / "processed" / "demo"
 CSV_PATH = OUTPUT_DIR / "forecast_24h.csv"
 JSON_PATH = OUTPUT_DIR / "forecast_24h.json"
