@@ -12,10 +12,32 @@ import streamlit as st
 
 from src.data_loader import load_replay, load_stations, replay_window, valid_origins
 from src.health_advice import EPD_ADVICE_URL, EPD_AQHI_URL, activity_advice, risk_band, risk_colour
+from src.live_forecast import load_live_forecast
 from src.models import ForecastBundle
 
 
 ROOT = Path(__file__).resolve().parent
+
+STATION_LABELS = {
+    "Causeway Bay": "Causeway Bay 铜锣湾",
+    "Central": "Central 中环",
+    "Central/Western": "Central/Western 中西区",
+    "Eastern": "Eastern 东区",
+    "Kwai Chung": "Kwai Chung 葵涌",
+    "Kwun Tong": "Kwun Tong 观塘",
+    "Mong Kok": "Mong Kok 旺角",
+    "North": "North 北区",
+    "Sha Tin": "Sha Tin 沙田",
+    "Sham Shui Po": "Sham Shui Po 深水埗",
+    "Southern": "Southern 南区",
+    "Tai Po": "Tai Po 大埔",
+    "Tseung Kwan O": "Tseung Kwan O 将军澳",
+    "Tsuen Wan": "Tsuen Wan 荃湾",
+    "Tuen Mun": "Tuen Mun 屯门",
+    "Tung Chung": "Tung Chung 东涌",
+    "Yuen Long": "Yuen Long 元朗",
+}
+
 st.set_page_config(
     page_title="HK Air Quality Outlook",
     page_icon="◌",
@@ -39,7 +61,18 @@ st.markdown(
     .advice { background:rgba(255,255,255,.82); border-left:5px solid #0f8b8d; padding:1rem 1.15rem; border-radius:8px 16px 16px 8px; }
     .fineprint { color:#61708a; font-size:.82rem; }
     .risk-pill { display:inline-block; padding:.32rem .7rem; border-radius:999px; color:white; font-weight:800; }
+    [data-testid="stMetricLabel"] { color:#52627a !important; }
+    [data-testid="stMetricValue"] { color:#17223b !important; }
+    [data-testid="stMetricDelta"] { color:#35566f !important; }
+    [data-testid="stSelectbox"] label,
+    [data-testid="stSelectbox"] label p { color:#17223b !important; }
     div[data-testid="stPlotlyChart"] { background:rgba(255,255,255,.72); border-radius:18px; padding:.35rem; }
+    @media (max-width: 768px) {
+      .hero { padding:1rem; border-radius:16px; }
+      .hero h1 { font-size:1.7rem; }
+      .hero p { font-size:.92rem; }
+      [data-testid="stMetric"] { padding:.75rem; }
+    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -67,18 +100,15 @@ def cached_demo_output():
     return pd.DataFrame(payload["records"]), payload["summary"]
 
 
-@st.cache_data(show_spinner=False)
 def cached_live_output():
-    status_path = ROOT / "data" / "live" / "prediction_status.json"
-    forecast_path = ROOT / "data" / "live" / "forecast_24h.json"
-    status = None
-    if status_path.exists():
-        status = json.loads(status_path.read_text(encoding="utf-8"))
-    if not forecast_path.exists():
-        return None, None, status
-    payload = json.loads(forecast_path.read_text(encoding="utf-8"))
-    return pd.DataFrame(payload["records"]), payload["summary"], status
-
+    snapshot = load_live_forecast(ROOT)
+    return (
+        snapshot.records,
+        snapshot.summary,
+        snapshot.status,
+        snapshot.state,
+        snapshot.message,
+    )
 
 def hero(title: str, subtitle: str, live: bool = False):
     mode = "Live 24-hour forecast" if live else "Historical replay · Not a live forecast"
@@ -106,10 +136,27 @@ def model_metrics() -> pd.DataFrame:
     )
 
 
+def station_display(station: str) -> str:
+    return STATION_LABELS.get(station, station)
+
+
+def best_activity_window(times: pd.DatetimeIndex, values: np.ndarray, hours: int = 3):
+    """Return the lowest predicted consecutive window without implying certainty."""
+    numeric = np.asarray(values, dtype=float)
+    if len(numeric) < hours or not np.isfinite(numeric).all():
+        raise ValueError("A complete forecast is required to rank activity windows")
+    means = np.convolve(numeric, np.ones(hours) / hours, mode="valid")
+    start_index = int(np.argmin(means))
+    start = times[start_index]
+    end = times[start_index + hours - 1] + pd.Timedelta(hours=1)
+    window = numeric[start_index : start_index + hours]
+    return start, end, float(window.mean()), risk_band(float(window.max()))
+
+
 history, panel, station_order, metadata = cached_data()
 bundle = cached_models()
 demo_forecast, demo_summary = cached_demo_output()
-live_forecast, live_summary, live_status = cached_live_output()
+live_forecast, live_summary, live_status, live_state, live_message = cached_live_output()
 origins = valid_origins(panel, bundle.lookback, bundle.horizon)
 if origins.empty:
     st.error("No complete historical replay window is available.")
@@ -125,7 +172,7 @@ if page == "Network overview":
     hero(
         "Air quality, with tomorrow in view.",
         "View the latest official-data forecast when ready, with the audited historical replay retained for evidence.",
-        live=live_summary is not None,
+        live=live_summary is not None and live_state in {"live", "last_valid"},
     )
     latest_time = panel.dropna(how="all").index[-1]
     latest = panel.loc[latest_time].rename("AQHI").reset_index()
@@ -137,7 +184,11 @@ if page == "Network overview":
     cols[3].metric("Primary test MAE", "0.538 AQHI")
 
     if live_summary is not None:
-        st.success(
+        live_notice = (
+            st.success if live_state == "live" else
+            st.warning if live_state == "last_valid" else st.error
+        )
+        live_notice(
             "Latest live 24-hour forecast loaded: "
             f"{live_summary['forecast_rows']} rows, "
             f"{live_summary['station_count']} stations, "
@@ -198,13 +249,189 @@ if page == "Network overview":
         st.dataframe(model_metrics(), hide_index=True, use_container_width=True)
 
 elif page == "Station forecast":
+
+    live_columns = {"timestamp", "station_id", "tsmixer", "patchtst_style"}
+    live_station_mode = (
+        live_forecast is not None
+        and not live_forecast.empty
+        and live_summary is not None
+        and bool(live_summary.get("prediction_ready"))
+        and live_columns.issubset(live_forecast.columns)
+    )
+    if live_station_mode:
+        hero(
+            "Latest 24-hour station forecast.",
+            "Choose a monitoring station to see the newest model output generated from the rolling government AQHI feed.",
+            live=True,
+        )
+        if live_state == "live":
+            st.success("Forecast service is current and ready for activity planning.")
+        elif live_state == "last_valid":
+            st.warning(live_message)
+        elif live_state == "expired":
+            st.error(live_message)
+
+        st.subheader("Plan an outdoor activity")
+        st.caption(
+            "Choose the monitoring area nearest to your planned activity. "
+            "The recommendation is based on predicted AQHI, not your exact street location."
+        )
+        available_stations = [
+            name for name in station_order
+            if name in set(live_forecast["station_id"].astype(str))
+        ]
+        if not available_stations:
+            st.error("The newest output does not contain a recognised monitoring station.")
+            st.stop()
+
+        station = st.selectbox(
+            "Activity area / monitoring station",
+            available_stations,
+            index=0,
+            format_func=station_display,
+        )
+        station_live = live_forecast.loc[
+            live_forecast["station_id"].astype(str).eq(station)
+        ].copy()
+        station_live["timestamp"] = pd.to_datetime(
+            station_live["timestamp"], errors="coerce", utc=True
+        ).dt.tz_convert("Asia/Hong_Kong")
+        station_live = station_live.dropna(subset=["timestamp"]).sort_values("timestamp")
+        if len(station_live) != 24:
+            st.error(
+                f"The newest output contains {len(station_live)} hourly rows for {station}; "
+                "24 are required. The page will update after the next valid model run."
+            )
+            st.stop()
+
+        forecast_time = pd.DatetimeIndex(station_live["timestamp"])
+        mixer = pd.to_numeric(station_live["tsmixer"], errors="coerce").to_numpy()
+        patch = pd.to_numeric(station_live["patchtst_style"], errors="coerce").to_numpy()
+        disagreement = np.abs(mixer - patch)
+        peak = float(np.nanmax(mixer))
+        peak_band = risk_band(peak)
+        mean_gap = float(np.nanmean(disagreement))
+        agreement_label = "Close" if mean_gap <= 0.5 else "Mixed" if mean_gap <= 1 else "Wide"
+        hourly_risk = [risk_band(float(value)) for value in mixer]
+        best_start, best_end, best_mean, best_band = best_activity_window(
+            forecast_time, mixer
+        )
+        best_label = f"{best_start:%H:%M}–{best_end:%H:%M}"
+        origin = pd.to_datetime(
+            live_summary.get("forecast_origin"), errors="coerce", utc=True
+        )
+        origin_label = (
+            origin.tz_convert("Asia/Hong_Kong").strftime("%d %b %H:%M")
+            if not pd.isna(origin) else "Latest run"
+        )
+
+        st.caption(f"Forecast origin: {origin_label} HKT · next 24 hours")
+        metrics = st.columns(4)
+        metrics[0].metric("Next-hour AQHI", f"{mixer[0]:.1f}", hourly_risk[0])
+        metrics[1].metric("Lower-exposure 3h window", best_label, best_band)
+        metrics[2].metric("Predicted 24h peak", f"{peak:.1f}", peak_band)
+        metrics[3].metric("Mean model gap", f"{mean_gap:.2f}", agreement_label)
+
+        fig = go.Figure()
+        for low, high, colour in [
+            (1, 3, "#2eb67d"), (3, 6, "#f3b61f"),
+            (6, 7, "#f27d3d"), (7, 10.5, "#df3f5b")
+        ]:
+            fig.add_hrect(y0=low, y1=high, fillcolor=colour, opacity=0.08, line_width=0)
+        fig.add_vrect(
+            x0=best_start, x1=best_end, fillcolor="#0f8b8d", opacity=0.10,
+            line_width=0, annotation_text="Lower-exposure window",
+            annotation_position="top left",
+        )
+        fig.add_trace(go.Scatter(
+            x=forecast_time, y=mixer, name="TSMixer forecast",
+            line=dict(color="#0f8b8d", width=3)
+        ))
+        fig.add_trace(go.Scatter(
+            x=forecast_time, y=patch, name="PatchTST-style comparison",
+            line=dict(color="#ee6c4d", width=2)
+        ))
+        fig.update_layout(
+            height=510, margin=dict(l=10, r=10, t=35, b=10),
+            title=f"{station_display(station)}: newest 24-hour forecast",
+            yaxis_title="Capped AQHI", xaxis_title="Hong Kong time",
+            hovermode="x unified", paper_bgcolor="rgba(0,0,0,0)",
+            plot_bgcolor="rgba(255,255,255,.5)",
+            legend=dict(orientation="h", y=1.08, x=0),
+        )
+        st.plotly_chart(fig, use_container_width=True)
+
+        advice = activity_advice(peak_band)
+        left, right = st.columns([1, 1])
+        with left:
+            st.markdown(
+                f"""
+                <div class="advice">
+                  <b>Activity guide · predicted peak</b><br>
+                  <span class="risk-pill" style="background:{risk_colour(peak_band)}">{peak_band}</span>
+                  <p><b>Lower-exposure window:</b> {best_label} HKT · mean AQHI {best_mean:.1f} ({best_band})</p>
+                  <p><b>General public:</b> {advice['general']}</p>
+                  <p><b>Sensitive people:</b> {advice['sensitive']}</p>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+            st.caption(
+                "Adapted from Hong Kong EPD precautionary actions. "
+                "Seek medical advice if in doubt or unwell."
+            )
+        with right:
+            st.subheader("Hourly forecast table")
+            forecast_table = pd.DataFrame({
+                "Time (HKT)": forecast_time.strftime("%d %b %H:%M"),
+                "TSMixer": np.round(mixer, 2),
+                "PatchTST-style": np.round(patch, 2),
+                "Model gap": np.round(disagreement, 2),
+                "Risk": hourly_risk,
+            })
+            st.dataframe(
+                forecast_table, hide_index=True, use_container_width=True, height=285
+            )
+
+        generated = pd.to_datetime(
+            live_summary.get("generated_at"), errors="coerce", utc=True
+        )
+        generated_label = (
+            generated.tz_convert("Asia/Hong_Kong").strftime("%d %b %Y, %H:%M HKT")
+            if not pd.isna(generated) else "the latest successful workflow run"
+        )
+        st.info(
+            "TSMixer is the primary forecast. PatchTST-style is a diagnostic "
+            "comparison only; the two outputs are not averaged."
+        )
+        st.caption(
+            f"Generated {generated_label}. Educational model forecast; "
+            "not an official EPD forecast or emergency-warning service."
+        )
+        st.stop()
+
     hero(
         "Replay a 24-hour station forecast.",
         "Select a station and a valid forecast origin. The chart shows information that would have been available at that time, followed by the archived outcome.",
     )
+    if live_status is not None:
+        available_hours = int(live_status.get("available_complete_hours", 0))
+        required_hours = int(live_status.get("required_complete_hours", 72))
+        progress = min(1.0, available_hours / max(required_hours, 1))
+        st.progress(progress)
+        st.info(
+            f"Live forecast preparation: {available_hours}/{required_hours} consecutive complete hours. "
+            "Until the input reaches 72 hours, the historical replay below remains available "
+            "without being presented as a current forecast."
+        )
     options = origins[::6].union(pd.DatetimeIndex([origins[-1]])).sort_values(ascending=False)
     controls = st.columns([1, 1.35])
-    station = controls[0].selectbox("Monitoring station", station_order, index=0)
+    station = controls[0].selectbox(
+        "Activity area / monitoring station",
+        station_order,
+        index=0,
+        format_func=station_display,
+    )
     origin = controls[1].selectbox(
         "Forecast origin",
         options,
@@ -240,7 +467,7 @@ elif page == "Station forecast":
     fig.update_layout(
         height=510,
         margin=dict(l=10, r=10, t=35, b=10),
-        title=f"{station}: 72 hours observed → 24 hours forecast",
+        title=f"{station_display(station)}: 72 hours observed → 24 hours forecast",
         yaxis_title="Capped AQHI",
         xaxis_title="Hong Kong time",
         hovermode="x unified",
