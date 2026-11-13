@@ -9,7 +9,9 @@ on:
         default: false
         type: boolean
   schedule:
-    - cron: "12,42 * * * *"
+    # The official AQHI source updates hourly. Run off the top of the hour to
+    # reduce GitHub Actions peak-load delays; each run backfills the last 24h.
+    - cron: "17 * * * *"
       timezone: "Asia/Hong_Kong"
 
 permissions:
