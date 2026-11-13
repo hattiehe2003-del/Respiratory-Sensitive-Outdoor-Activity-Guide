@@ -67,6 +67,9 @@ st.markdown(
     [data-testid="stSelectbox"] label,
     [data-testid="stSelectbox"] label p { color:#17223b !important; }
     div[data-testid="stPlotlyChart"] { background:rgba(255,255,255,.72); border-radius:18px; padding:.35rem; }
+    div[data-testid="stPlotlyChart"] svg text { fill:#17223b !important; }
+    div[data-testid="stPlotlyChart"] .modebar { background:rgba(255,255,255,.94) !important; }
+    div[data-testid="stPlotlyChart"] .modebar-btn path { fill:#17223b !important; }
     @media (max-width: 768px) {
       .hero { padding:1rem; border-radius:16px; }
       .hero h1 { font-size:1.7rem; }
@@ -153,6 +156,38 @@ def best_activity_window(times: pd.DatetimeIndex, values: np.ndarray, hours: int
     return start, end, float(window.mean()), risk_band(float(window.max()))
 
 
+def apply_readable_plot_theme(fig, plot_bgcolor: str = "rgba(255,255,255,.86)"):
+    """Keep Plotly labels readable when the browser prefers a dark theme."""
+    ink = "#17223b"
+    grid = "rgba(97,112,138,.20)"
+    fig.update_layout(
+        template="plotly_white",
+        font=dict(color=ink, size=14),
+        title_font=dict(color=ink, size=18),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor=plot_bgcolor,
+        legend_font_color=ink,
+        hoverlabel=dict(
+            bgcolor="#ffffff",
+            bordercolor="#61708a",
+            font_color=ink,
+        ),
+    )
+    fig.update_xaxes(
+        color=ink,
+        gridcolor=grid,
+        linecolor="#61708a",
+        zerolinecolor=grid,
+    )
+    fig.update_yaxes(
+        color=ink,
+        gridcolor=grid,
+        linecolor="#61708a",
+        zerolinecolor=grid,
+    )
+    return fig
+
+
 history, panel, station_order, metadata = cached_data()
 bundle = cached_models()
 demo_forecast, demo_summary = cached_demo_output()
@@ -221,7 +256,6 @@ if page == "Network overview":
         x="longitude",
         y="latitude",
         color="AQHI",
-        size=np.repeat(14, len(snapshot)),
         hover_name="station_id",
         hover_data={"station_type": True, "longitude": ":.4f", "latitude": ":.4f", "AQHI": ":.1f"},
         color_continuous_scale=["#2eb67d", "#f3b61f", "#f27d3d", "#df3f5b"],
@@ -229,8 +263,16 @@ if page == "Network overview":
         labels={"longitude": "Longitude", "latitude": "Latitude"},
         height=470,
     )
-    fig.update_traces(marker={"line": {"color": "white", "width": 1.5}})
-    fig.update_layout(margin=dict(l=10, r=10, t=10, b=10), paper_bgcolor="rgba(0,0,0,0)")
+    fig.update_traces(marker={"size": 18, "line": {"color": "white", "width": 1.5}})
+    fig.update_layout(margin=dict(l=10, r=10, t=10, b=10))
+    apply_readable_plot_theme(fig)
+    fig.update_coloraxes(
+        colorbar=dict(
+            tickfont=dict(color="#17223b"),
+            title_font=dict(color="#17223b"),
+            bgcolor="rgba(255,255,255,.88)",
+        )
+    )
     st.plotly_chart(fig, use_container_width=True)
 
     left, right = st.columns([1.15, 0.85])
@@ -359,6 +401,7 @@ elif page == "Station forecast":
             plot_bgcolor="rgba(255,255,255,.5)",
             legend=dict(orientation="h", y=1.08, x=0),
         )
+        apply_readable_plot_theme(fig)
         st.plotly_chart(fig, use_container_width=True)
 
         advice = activity_advice(peak_band)
@@ -475,6 +518,7 @@ elif page == "Station forecast":
         plot_bgcolor="rgba(255,255,255,.5)",
         legend=dict(orientation="h", y=1.08, x=0),
     )
+    apply_readable_plot_theme(fig)
     st.plotly_chart(fig, use_container_width=True)
 
     advice = activity_advice(peak_band)
@@ -553,7 +597,8 @@ else:
         color_discrete_sequence=["#0f8b8d", "#ee6c4d"],
         height=390,
     )
-    fig.update_layout(margin=dict(l=10, r=10, t=20, b=10), paper_bgcolor="rgba(0,0,0,0)")
+    fig.update_layout(margin=dict(l=10, r=10, t=20, b=10))
+    apply_readable_plot_theme(fig)
     st.plotly_chart(fig, use_container_width=True)
     st.dataframe(metrics, hide_index=True, use_container_width=True)
 
