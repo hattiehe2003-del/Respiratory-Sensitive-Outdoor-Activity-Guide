@@ -1,6 +1,6 @@
 {
-  "available_complete_hours": 59,
-  "latest_input_timestamp": "2026-11-13T04:00:00+08:00",
+  "available_complete_hours": 64,
+  "latest_input_timestamp": "2026-11-13T09:00:00+08:00",
   "model_station_count": 17,
   "policy": "No imputation; an incomplete input window is never predicted.",
   "prediction_ready": false,
