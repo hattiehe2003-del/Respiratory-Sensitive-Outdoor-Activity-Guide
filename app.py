@@ -251,19 +251,24 @@ if page == "Network overview":
 
     st.subheader("Latest recorded snapshot in the replay dataset")
     st.caption(f"Recorded at {latest_time.strftime('%d %b %Y, %H:%M HKT')} · this is archived data, not a live reading.")
-    fig = px.scatter(
+    fig = px.scatter_map(
         snapshot,
-        x="longitude",
-        y="latitude",
+        lon="longitude",
+        lat="latitude",
         color="AQHI",
         hover_name="station_id",
         hover_data={"station_type": True, "longitude": ":.4f", "latitude": ":.4f", "AQHI": ":.1f"},
         color_continuous_scale=["#2eb67d", "#f3b61f", "#f27d3d", "#df3f5b"],
         range_color=[1, 10],
-        labels={"longitude": "Longitude", "latitude": "Latitude"},
-        height=470,
+        center={
+            "lon": float(snapshot["longitude"].mean()),
+            "lat": float(snapshot["latitude"].mean()),
+        },
+        zoom=9.4,
+        map_style="carto-positron",
+        height=520,
     )
-    fig.update_traces(marker={"size": 18, "line": {"color": "white", "width": 1.5}})
+    fig.update_traces(marker={"size": 18, "opacity": 0.92})
     fig.update_layout(margin=dict(l=10, r=10, t=10, b=10))
     apply_readable_plot_theme(fig)
     fig.update_coloraxes(
