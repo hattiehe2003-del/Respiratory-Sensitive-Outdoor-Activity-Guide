@@ -1,9 +1,19 @@
 {
-  "available_complete_hours": 64,
-  "latest_input_timestamp": "2026-11-13T09:00:00+08:00",
-  "model_station_count": 17,
-  "policy": "No imputation; an incomplete input window is never predicted.",
-  "prediction_ready": false,
-  "reason": "Waiting for 72 consecutive complete hours for all 17 model stations.",
-  "required_complete_hours": 72
+  "forecast_end": "2026-11-14T18:00:00+08:00",
+  "forecast_hours": 24,
+  "forecast_origin": "2026-11-13T18:00:00+08:00",
+  "forecast_rows": 408,
+  "forecast_start": "2026-11-13T19:00:00+08:00",
+  "generated_at": "2026-11-13T18:31:53.985052+08:00",
+  "input_end": "2026-11-13T18:00:00+08:00",
+  "input_hours": 72,
+  "input_start": "2026-11-10T19:00:00+08:00",
+  "mode": "live_forecast",
+  "models": [
+    "TSMixer",
+    "PatchTST-style"
+  ],
+  "policy": "No imputation; forecast generated only from a complete 72 x 17 input window.",
+  "prediction_ready": true,
+  "station_count": 17
 }
